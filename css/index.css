@@ -1,0 +1,55 @@
+.banner1 {
+    /* Đặt ảnh nền */
+    background: url("../anh/banner.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    min-height: 450px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+/* Kiểu cho tiêu đề (4T Shoe Store) */
+.banner1 h2 {
+    font-size: 3em; 
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/* Kiểu cho đoạn văn bản (Khám phá bộ sưu tập...) */
+.banner1 p {
+    font-size: 1.3em;
+    max-width: 700px; 
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Kiểu cho NÚT "Xem sản phẩm"*/
+.banner-button {
+    position: absolute;
+    display: block;
+    bottom: 50px; 
+    left: 50px;
+    padding: 15px 30px; 
+    background-color: #e74c3c; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.banner-button:hover {
+    background-color: #c0392b; 
+    transform: translateY(-2px); 
+}

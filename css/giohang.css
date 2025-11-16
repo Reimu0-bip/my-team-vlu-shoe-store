@@ -1,0 +1,109 @@
+/* ====================================== */
+/* STYLES CHO BẢNG GIỎ HÀNG (cart.php) */
+/* ====================================== */
+
+/* Định dạng chung cho bảng và hàng */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+}
+.cart-empty {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2em;
+    color: #777;
+}
+/* Kiểu cho ảnh sản phẩm */
+.cart-table td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* 1. STYLES CHO CỘT SỐ LƯỢNG */
+.cart-table td:nth-child(4) {
+    /* Đảm bảo các nút và số lượng nằm trên cùng một dòng và căn giữa */
+    white-space: nowrap; 
+}
+
+/* 2. Nút Tăng/Giảm Số Lượng (Biểu tượng &#x2796; và &#x2795;) */
+.cart-table td a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 8px; /* Tăng kích thước khu vực bấm */
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.2s;
+    line-height: 1; /* Căn chỉnh biểu tượng */
+}
+
+.cart-table td a:hover {
+    background-color: #f0f0f0;
+    border-color: #aaa;
+}
+
+/* 3. Nút XÓA (Biểu tượng &#x1F5D1; - Thùng rác) */
+/* Áp dụng cho liên kết trong cột cuối cùng */
+.cart-table td:last-child a {
+    background-color: #e74c3c; /* Màu đỏ */
+    color: white;
+    border: 1px solid #c0392b;
+    padding: 4px 10px;
+    font-size: 1.1em;
+}
+
+.cart-table td:last-child a:hover {
+    background-color: #c0392b;
+}
+
+/* ====================================== */
+/* CĂN CHỈNH TỔNG CỘNG VÀ THANH TOÁN */
+/* ====================================== */
+
+/* 1. Căn chỉnh Tổng cộng (h3.cart-total) */
+.cart-total {
+    /* Quan trọng: Buộc text nằm bên phải */
+    text-align: right; 
+    
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #2c3e50;
+    padding-right: 15px; /* Thêm padding cho đẹp */
+}
+
+/* 2. Căn chỉnh Nút Thanh toán (div.cart-button-wrapper) */
+.cart-button-wrapper {
+    /* Quan trọng: Buộc nội dung (nút) nằm bên phải */
+    text-align: right; 
+    
+    margin: 20px 0;
+    padding-right: 15px; /* Thêm padding cho đẹp */
+}
+
+/* Kiểu cho nút Thanh toán */
+.cart-button-wrapper button {
+    padding: 12px 25px;
+    background-color: #2ecc71; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cart-button-wrapper button:hover {
+    background-color: #27ae60;
+}

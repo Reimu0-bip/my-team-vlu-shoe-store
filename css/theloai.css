@@ -1,0 +1,97 @@
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li ul.dropdown li a:hover {
+    background-color: #444;
+    color: #ffcc00;
+  }
+  
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+nav ul li a[href="hang.php"] {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+  nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 18px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  pre {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 100px;
+    z-index: 500;
+    border: 1px solid #444;
+  }  
+  
+  nav ul li:hover ul.dropdown {
+    display: block;
+  }
+  
+  nav ul li ul.dropdown li {
+    float: none;
+    border-top: 1px solid #444;
+  }
+  
+  nav ul li ul.dropdown li a {
+    padding: 12px 16px;
+    color: #fff;
+  }
+
+  nav ul li ul.dropdown .dropdown-header {
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 10px 16px;
+    background-color: #222;
+    cursor: default;
+  }
+  
+  nav::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* SCROLL TO TOP BUTTON */
+#scrollToTopBtn {
+  /* Vị trí cố định ở góc dưới bên phải màn hình */
+  position: fixed;
+  bottom: 20px; 
+  right: 30px;
+  
+  /* Thiết kế nút */
+  display: none; /* Mặc định ẩn nút */
+  background-color: #3498db; /* Màu nền xanh */
+  color: white; /* Màu chữ trắng */
+  border: none;
+  border-radius: 50%; /* Hình tròn */
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1;
+  z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+  opacity: 0.8;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #2980b9;
+  opacity: 1;
+}

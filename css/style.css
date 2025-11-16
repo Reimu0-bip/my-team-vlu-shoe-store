@@ -1,0 +1,167 @@
+body {
+  font-family: 'Arial', sans-serif; /* Thêm font dự phòng */
+  background: #f8f8f8;
+  margin: 0;
+  color: #333;
+  line-height: 1.6; /* Tăng độ dễ đọc */
+}
+
+/* PHẦN CHUNG */
+header, footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0; /* Giảm padding ngang */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Căn giữa nội dung chính */
+  padding: 20px;
+}
+
+/* BANNER VÀ TIÊU ĐỀ */
+.banner {
+    text-align: center;
+    background: linear-gradient(to right, #F9DC5C, #E8D3F3, #8DCCAD); 
+    color: #333; /* Màu chữ */
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+.list-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2em;
+}
+
+/* HEADER VÀ NAVIGATION */
+header {
+  background-color: #1c1c1c;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Đẩy các nhóm (user-controls, nav, search-bar) ra hai bên */
+  align-items: center;
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap; /* Cho phép các mục xuống dòng trên màn hình nhỏ */
+}
+
+/* Dùng Flexbox để căn giữa menu */
+nav {
+  flex-grow: 1; /* Cho phép nav chiếm hết không gian còn lại */
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; 
+  margin: 0;
+  padding: 0;
+  
+  /* CĂN GIỮA MENU */
+  justify-content: center; 
+  width: 100%; 
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 0; /* Tạo vùng click rộng hơn */
+  display: block;
+}
+
+nav ul li a:hover {
+  color: #f3c623; 
+}
+
+/* SẢN PHẨM VÀ GIỎ HÀNG */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 20px; /* Thêm khoảng cách giữa các sản phẩm */
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 220px; /* Tăng nhẹ kích thước sản phẩm */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Hiệu ứng nổi */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.product img {
+  width: 100%;
+  height: 150px; /* Cố định chiều cao ảnh */
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Nút thêm vào giỏ hàng */
+.btn-add-cart {
+  background-color: #2575fc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-size: 0.9em;
+}
+
+.btn-add-cart:hover {
+  background-color: #1a5ac9;
+}
+
+/* Nút Xóa/Sửa của Admin */
+.admin-actions a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin: 0 3px;
+  display: inline-block;
+}
+
+/* Định dạng cho nút tìm kiếm trên products.php */
+.search-form button {
+  height: 40px; 
+  margin-left: -4px; /* Khớp với input */
+}
+
+/* Tiêu đề giỏ hàng */
+.type_gio_hang, .cart-heading {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
