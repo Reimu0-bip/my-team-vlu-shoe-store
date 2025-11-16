@@ -8,7 +8,7 @@ Giảng viên: Ngô Ngọc Thắm
 ----------------------------------------------------------------------
 I. THÔNG TIN THÀNH VIÊN
 ----------------------------------------------------------------------
-- MSSV – Họ Tên – Vai trò (Frontend / Backend / Database / Triển khai)
+- 2474802010347 – Võ Thành Tâm – Frontend / Backend / Database / Triển khai
 - MSSV – Họ Tên – Vai trò
 - MSSV – Họ Tên – Vai trò
 
