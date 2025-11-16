@@ -29,7 +29,7 @@ III. CÁCH CÀI ĐẶT & CHẠY DỰ ÁN (LOCALHOST - XAMPP)
 3. Khởi động Apache và MySQL
 4. Import Database:
    - Mở phpMyAdmin
-   - Tạo database mới: <ten_database>
+   - Tạo database mới: if0_40432152_shop_giay
    - Import file: Database/database.sql
 5. Chạy dự án:
    http://localhost:8080/4T_Shoe
@@ -53,7 +53,7 @@ URL: https://4tshoe.page.gd
 VI. LINK GITHUB (BẮT BUỘC)
 ----------------------------------------------------------------------
 Repo chính (public): 
-https://github.com/________________________________
+https://github.com/Reimu0-bip/my-team-vlu-shoe-store.git
 
 Nhánh từng sinh viên (BẮT BUỘC):
 - SV1: https://github.com/.../tree/<branch_sv1>
