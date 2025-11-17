@@ -57,7 +57,7 @@ https://github.com/Reimu0-bip/my-team-vlu-shoe-store.git
 
 Nhánh từng sinh viên (BẮT BUỘC):
 - SV1: https://github.com/.../tree/<branch_sv1>
-- SV2: https://github.com/NgoVinhThanh2474802010360/my-team-vlu-shoe-store/blob/master/LaptrinhUngdungWeb_Template_README.txt
+- SV2: https://github.com/.../tree/<branch_sv2>
 - SV3: https://github.com/.../tree/<branch_sv3>
 
 Ghi chú:
