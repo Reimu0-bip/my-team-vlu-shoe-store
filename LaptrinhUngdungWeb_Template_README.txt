@@ -11,7 +11,7 @@ I. THÔNG TIN THÀNH VIÊN
 - 2474802010347 – Võ Thành Tâm – Frontend / Backend / Database / Triển khai (Reimu0-bip)
 - 2474802010360 - Ngô Vinh Thành - Frontend / Backend / Database / Triển khai
 - 2474802010353 – Nguyễn Quốc Thái – Frontend / Backend / Database / Triển khai
-
+- 2474802010372 - Nguyễn Lê Duy Thịnh - Frontend / Backend / Databse / Triêtn khai
 ----------------------------------------------------------------------
 II. MÔ TẢ ĐỀ TÀI
 ----------------------------------------------------------------------
