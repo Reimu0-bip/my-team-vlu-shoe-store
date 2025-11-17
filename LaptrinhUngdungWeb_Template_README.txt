@@ -30,7 +30,7 @@ III. CÁCH CÀI ĐẶT & CHẠY DỰ ÁN (LOCALHOST - XAMPP)
 4. Import Database:
    - Mở phpMyAdmin
    - Tạo database mới: if0_40432152_shop_giay
-   - Import file: Database/database.sql
+   - Import file: if0_40432152_shop_giay.sql
 5. Chạy dự án:
    http://localhost:8080/4T_Shoe
 
