@@ -10,7 +10,7 @@ I. THÔNG TIN THÀNH VIÊN
 ----------------------------------------------------------------------
 - 2474802010347 – Võ Thành Tâm – Frontend / Backend / Database / Triển khai
 - 2474802010360 - Ngô Vinh Thành - Frontend / Backend / Database / Triển khai
-- MSSV – Họ Tên – Vai trò
+- 2474802010353 – Nguyễn Quốc Thái – Frontend / Backend / Database / Triển khai
 
 ----------------------------------------------------------------------
 II. MÔ TẢ ĐỀ TÀI
