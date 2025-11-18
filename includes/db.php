@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$dbname = "shop_giay";
+$dbname = "if0_40432152_shop_giay";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
