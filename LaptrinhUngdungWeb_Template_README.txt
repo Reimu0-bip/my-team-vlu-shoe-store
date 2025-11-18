@@ -55,15 +55,6 @@ VI. LINK GITHUB (BẮT BUỘC)
 Repo chính (public): 
 https://github.com/Reimu0-bip/my-team-vlu-shoe-store.git
 
-Nhánh từng sinh viên (BẮT BUỘC):
-- SV1: https://github.com/.../tree/<branch_sv1>
-- SV2: https://github.com/.../tree/<branch_sv2>
-- SV3: https://github.com/.../tree/<branch_sv3>
-
-Ghi chú:
-=> Mỗi thành viên phải có log commit rõ ràng xuyên suốt 3 tuần.
-=> Không có log = không đạt đồ án (theo yêu cầu học phần).
-
 ----------------------------------------------------------------------
 VII. CẤU TRÚC THƯ MỤC BÀI NỘP
 ----------------------------------------------------------------------
