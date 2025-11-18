@@ -1,0 +1,184 @@
+/* =========================================================================
+   Giao diện chung: Áp dụng cho trang Thanh toán (checkout) và Chi tiết/Danh sách Đơn hàng (order_detail)
+   ========================================================================= */
+
+/* Khung chứa chính (Container) */
+.checkout-container, 
+.success-container,
+.order-summary { 
+    max-width: 800px;
+    margin: 30px auto; 
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    background-color: #fff;
+}
+
+.checkout-container, .success-container { 
+    max-width: 600px; 
+}
+
+
+/* =========================================================================
+   Tiêu đề và Chia đoạn
+   ========================================================================= */
+
+/* Dùng selector cụ thể hơn để không đè lên h2/h3 global */
+.order-summary h2, .checkout-container h2, .success-container h2 { 
+    text-align: center; 
+    color: #333;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.order-summary h3, .checkout-container h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+
+/* =========================================================================
+   Form và Input (Checkout)
+   ========================================================================= */
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+label { 
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 5px; 
+}
+
+/* SỬA XUNG ĐỘT: Chỉ định rõ cho input nằm trong form-group/container */
+.checkout-container input[type="text"], 
+.checkout-container input[type="tel"], 
+.checkout-container textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+.checkout-container input[type="text"]:focus, 
+.checkout-container input[type="tel"]:focus, 
+.checkout-container textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.payment-options {
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Chỉ áp dụng cho radio/checkbox trong payment-options */
+.payment-options input[type="radio"] { 
+    margin-right: 10px; 
+    width: auto;
+    padding: 0; /* loại bỏ padding thừa */
+    border: none;
+}
+
+
+/* =========================================================================
+   Bảng Chi tiết Đơn hàng (Order Detail & My Orders)
+   ========================================================================= */
+
+.info-box p { 
+    margin: 8px 0; 
+}
+
+.details-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    font-size: 14px;
+}
+.details-table th, .details-table td { 
+    border: 1px solid #eee; 
+    padding: 12px 10px;
+    text-align: left; 
+}
+.details-table th { 
+    background-color: #f8f8f8; 
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* =========================================================================
+   Nút và Thông báo
+   ========================================================================= */
+
+/* SỬA XUNG ĐỘT: Chỉ định rõ cho button checkout */
+button.btn-checkout { 
+    background-color: #e74c3c; 
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    width: 100%; 
+    margin-top: 20px; 
+    transition: background-color 0.3s;
+}
+
+button.btn-checkout:hover {
+    background-color: #c0392b;
+}
+
+/* Thông báo lỗi */
+.alert-error { 
+    color: #e74c3c; 
+    background-color: #fdd; 
+    padding: 10px; 
+    border: 1px solid #e74c3c; 
+    border-radius: 4px; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+/* Khối thông báo thành công */
+.success-box { 
+    background-color: #ecf0f1; 
+    padding: 15px; 
+    border-radius: 4px; 
+    margin-bottom: 20px; 
+}
+
+.success-box p { 
+    margin: 5px 0; 
+}
+
+/* Nút Quay lại/Tiếp tục (dạng thẻ <a>) */
+.btn-return { 
+    background-color: #3498db; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    text-align: center; 
+    display: block; 
+    text-decoration: none; 
+    margin-top: 10px; 
+    transition: background-color 0.3s;
+}
+
+.btn-return:hover {
+    background-color: #2980b9;
+}
+
+.order-summary h3:last-of-type span {
+    font-size: 1.2em;
+}

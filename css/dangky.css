@@ -1,52 +1,145 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* =========================================================================
+   Style cơ bản và Header
+   ========================================================================= */
 
-body {
+   body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Nền nhẹ nhàng */
+    margin: 0; /* Loại bỏ margin mặc định */
 }
 
-input, button {
+/* Flexbox cho Header để căn chỉnh các thành phần (logo, nav, user controls) */
+header {
+    display: flex;
+    justify-content: space-between; /* Đẩy các item ra hai bên */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Ví dụ: nền Header */
+    color: white;
+}
+
+/* Style cơ bản cho Input và Button */
+input,
+button {
+    /* Đảm bảo style đồng nhất cho input và button */
     padding: 10px;
     margin: 5px 0;
+    border: 1px solid #ddd;
     border-radius: 4px;
+    box-sizing: border-box; 
 }
 
+button {
+    /* Đặt lại width cho button ngoài modal nếu cần */
+    width: auto;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+button:hover {
+    background: #ccc; /* Màu hover nhẹ hơn xám cũ */
+}
+
+/* Style cho nút "Đăng nhập" / Tên người dùng */
+#loginBtn,
+.btn-logout {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Style riêng cho nút mở Đăng ký/Đăng nhập (dường như không dùng) */
 .openRegister {
     cursor: pointer;
     background: white;
     color: black;
-    border: black;
+    border: 1px solid black;
+    width: auto;
 }
 
-button:hover { background: gray; }
+.error { 
+    color: red; 
+    font-size: 14px; 
+    margin: 5px 0;
+}
 
-.error { color:red; font-size:14px; }
 
-/* Modal styles */
+/* =========================================================================
+   Modal (Đăng nhập/Đăng ký)
+   ========================================================================= */
+
+/* Class ẩn */
 .hidden {
-  display: none !important;
+    display: none !important;
 }
-.custom-modal {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-.modal-content-custom {
-  background-image: url("../anh/logo.jpg");
-  background-size: cover;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-}
-.closeLoginBtn { cursor: pointer; float: right; font-size: 20px; }
-.link-btn { background: none; border: none; color: red; cursor: pointer; text-decoration: underline; }
 
+/* Modal Overlay */
+.custom-modal {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background: rgba(0,0,0,0.7); /* Tăng độ mờ */
+    display: flex;
+    align-items: center; /* Căn giữa dọc */
+    justify-content: center; /* Căn giữa ngang */
+    z-index: 1000;
+}
+
+/* Nội dung Modal */
+.modal-content-custom {
+    background-color: white; /* Đảm bảo nền trắng để nội dung dễ đọc */
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    /* Giữ ảnh nền nhưng đặt độ trong suốt thấp (opacity/overlay) */
+    background-image: url("../anh/logo.jpg");
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke; /* Màu chữ */
+}
+
+/* Nút Đóng Modal */
+.closeLoginBtn { 
+    cursor: pointer; 
+    float: right; 
+    font-size: 24px; 
+    font-weight: bold;
+    color: #e74c3c; /* Màu đỏ cho nút đóng */
+}
+
+/* Button chuyển đổi giữa Đăng nhập/Đăng ký */
+.link-btn { 
+    background: none; 
+    border: none; 
+    color: #e74c3c; /* Màu đỏ */
+    cursor: pointer; 
+    text-decoration: underline; 
+    display: inline; /* Đảm bảo nằm cùng dòng với text */
+    padding: 0;
+    width: auto;
+}
+
+.link-btn:hover {
+    color: #c0392b;
+}
+
+/* Style tiêu đề trong modal */
+.modal-content-custom h2 {
+    margin-top: 0;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Reset input và button trong modal để chúng không bị ảnh hưởng bởi ảnh nền */
+.modal-content-custom input,
+.modal-content-custom button {
+    margin-bottom: 10px;
+}
